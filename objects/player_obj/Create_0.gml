@@ -5,6 +5,7 @@ udi=false
 udi_draw_ala=0
 cold=false
 flag_attack=false
+flag_gun_lock=false
 ls_pdd_direction=0;
 image_xscale=0.5;
 image_yscale=0.5;
@@ -27,6 +28,7 @@ function player_hurt()
 	cold=1
 	global.shock=15
 	instance_create_depth(x,y,depth-1,enemy_death_fx)
+	flag_gun_lock=false
 	ds_list_clear(global.head_list)
 	x=-256
 	y=360
@@ -42,4 +44,5 @@ function player_hurt()
 	{
 		flag_destroy=1
 	}
+	with(fsq_father)instance_destroy(id,false)
 }

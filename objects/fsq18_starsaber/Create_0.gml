@@ -3,4 +3,5 @@
 
 // Inherit the parent event
 event_inherited();
-
+lsdre=irandom(30)
+alarm[0]=1

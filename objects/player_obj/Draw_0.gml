@@ -37,8 +37,16 @@ if(ls_list_size>0)//有头的场合
 				a=create_danmaku_player(vx,vy,hid)
 				a.direction=lsdre
 				a.hid=hid
-				a.pfsqRESET()
-				ds_list_delete(global.head_list,i)
+				if(global.head_lock[hid]==false)
+				{
+					a.pfsqRESET()
+					ds_list_delete(global.head_list,i)
+				}
+				else
+				{
+					flag_gun_lock=1
+					a.fat=id
+				}
 				flag_attack=0
 				break
 			}

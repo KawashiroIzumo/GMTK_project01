@@ -1,5 +1,9 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function create_sfq(){
-
+/// @description create_sfq(mb,sfq)
+/// @param mb
+/// @param sfq
+function create_sfq(mb,sfq) 
+{
+	mb.sfq=instance_create_depth(mb.x,mb.y,-100,sfq)
+	mb.sfq.fat=mb
+	return mb.sfq;
 }

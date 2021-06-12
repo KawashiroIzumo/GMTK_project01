@@ -12,6 +12,7 @@ function database_head()
 		global.head_ai[i]=empty_timeline
 		global.head_hp[i]=100
 		global.head_spd[i]=6
+		global.head_lock[i]=false
 		global.head_spd_player[i]=6
 	}
 	//_________---------------__________________-------------
@@ -48,7 +49,20 @@ function database_head()
 	global.head_ai[i]=test_ai_hit_n_run
 	global.head_hp[i]=100
 	global.head_spd[i]=6
+	global.head_spd_player[i]=6
+	#endregion
+	//_________---------------__________________-------------
+	i=18
+	#region 星剑士
+	global.head_name[i]="星剑士"
+	global.head_spr[i]=head18_kb
+	global.head_danmaku_player[i]=pfsq18_kirby
+	global.head_danmaku_enemy[i]=fsq18_starsaber
+	global.head_ai[i]=test_ai_rhit
+	global.head_hp[i]=100
+	global.head_spd[i]=6
 	global.head_spd_player[i]=12
+	global.head_lock[i]=1
 	#endregion
 	//_________---------------__________________-------------
 	global.head_num=i+1
