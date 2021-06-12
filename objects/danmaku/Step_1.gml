@@ -9,6 +9,8 @@ if(team==0)
 		if(hp<=0)continue;
 		if(point_distance(x,y,other.x,other.y)<=pd+32)
 		{
+			image_blend=c_red
+			alarm[1]=5
 			hp+=other.atk
 			sound_SE_play_gain(other.hitsound,0,1)
 			if(!other.udi)
