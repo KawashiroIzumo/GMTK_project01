@@ -14,8 +14,13 @@ function Check_Collision()
 		vy=y+head_vy_start
 		for(i=0;i<ls_list_size;i++)
 		{
-			draw_sprite_ext(Sprite74,0,vx,vy,0.5,0.5,0,c_white,1)
-			if(head_collision.check_collision(vx,vy)) return true;
+			//draw_sprite_ext(Sprite74,0,vx,vy,0.5,0.5,0,c_white,1)
+			var sflag=false
+			with(head_collision)
+			{
+				sflag=check_collision(vx,vy)
+			}
+			return sflag;
 			vx+=24
 			vy+=head_y_plus*i/8
 		}
