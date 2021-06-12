@@ -69,27 +69,52 @@ if(!cold)
 	if(y<=0)y=0;
 	}
 	#endregion
-	#region 射击处理
-	attack_cold--
-	if(attack_cold<0)
+	if(!flag_gun_lock)
 	{
-		attack_cold=0
-		if(keyboard_check(ord("Z")))
+		#region 射击处理
+		attack_cold--
+		if(attack_cold<0)
 		{
-			var list_target=-1;
-			if(ds_exists(global.head_list,ds_type_list))list_target=ds_list_size(global.head_list)-1
-			if(list_target==-1)//没有头的场合
+			attack_cold=0
+			if(keyboard_check(ord("Z")))
 			{
-				attack_cold=20
-				var a=instance_create_layer(x+32,y,"danmaku",player_absorb_obj)
+				var list_target=-1;
+				if(ds_exists(global.head_list,ds_type_list))list_target=ds_list_size(global.head_list)-1
+				if(list_target==-1)//没有头的场合
+				{
+					attack_cold=20
+					var a=instance_create_layer(x+32,y,"danmaku",player_absorb_obj)
+				}
+				else 
+				{
+					attack_cold=20
+					flag_attack=1
+				}
 			}
-			else 
+			else flag_attack=false
+		}
+		#endregion
+		#region 换弹处理
+		if(!flag_attack)
+		{
+			if(ds_exists(global.head_list,ds_type_list))
 			{
-				attack_cold=20
-				flag_attack=1
+				ls_list_size=ds_list_size(global.head_list)
+				if(keyboard_check_pressed(ord("C"))&&ls_list_size>1)
+				{
+					a=global.head_list[| 0]
+					ds_list_delete(global.head_list,0)
+					ds_list_add(global.head_list,a)
+					sound_SE_play(se_graze,0)
+				}
 			}
 		}
-		else flag_attack=false
+		#endregion
+	}
+	#region 唤起菜单
+	if(keyboard_check_released(vk_escape))
+	{
+		instance_create_layer(0,0,"system_layer",pause_menu)
 	}
 	#endregion
 }

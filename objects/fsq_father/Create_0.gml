@@ -4,6 +4,7 @@ team=0
 hid=-1
 spd=6
 target_direction=-1
+fat=noone
 function pfsqRESET()
 {
 	speed=spd

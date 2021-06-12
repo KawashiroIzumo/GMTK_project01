@@ -2,7 +2,7 @@
 // You can write your code in this editor
 if(!cold)
 {
-	if(instance_exists(player_obj))
+	if(instance_exists(player_obj)&&player_obj.flag_gun_lock==false)
 	{
 		var lsdis=point_distance(x,y,player_obj.x,player_obj.y)
 		if(absorb)
@@ -13,6 +13,7 @@ if(!cold)
 		}
 		else 
 		{
+			x-=4
 			image_alpha-=0.002
 			if(image_alpha<0.1)instance_destroy()
 			if(lsdis<192)absorb=1	

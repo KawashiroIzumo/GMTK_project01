@@ -15,15 +15,11 @@ vx=0;
 vy=0;
 vw=display_get_gui_width();
 vh=32;
-draw_set_alpha(0.5);
-draw_set_color(0);
-draw_rectangle(vx,vy,vx+vw,vy+vh,0);
-vy=display_get_gui_height()-vh;
-draw_rectangle(vx,vy,vx+vw,vy+vh,0);
 draw_set_alpha(1);
+draw_sprite(hud_bak,0,0,0)
 #region 顶部信息区
 draw_set_font(global.font_m)
-draw_set_color(c_white)
+draw_set_color(make_color_rgb(244,152,0))
 draw_set_halign(fa_left)
 draw_set_valign(fa_middle)
 var qtext="LIFE："
@@ -49,7 +45,7 @@ if(global.chara_hp>floor(global.chara_hp))
 #endregion
 #region 底部部信息区
 draw_set_font(global.font_m)
-draw_set_color(c_white)
+draw_set_color(make_color_rgb(244,152,0))
 draw_set_halign(fa_left)
 draw_set_valign(fa_middle)
 var qtext="HEAD："

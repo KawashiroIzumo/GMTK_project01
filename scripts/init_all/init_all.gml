@@ -29,5 +29,7 @@ function init_all()
 	global.gamemode_soundtest=false
 	global.shock=0
 	global.boss=noone
+	init_cofing()
+	init_test()
 	database_all()
 }
