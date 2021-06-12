@@ -14,6 +14,9 @@ attack_cold=20
 head_vx_start=64
 head_vy_start=0
 head_y_plus=0
+
+head_collision=instance_create_layer(x,y,"player",Head_Collision);
+
 function player_hurt()
 {
 	if(global.chara_hp>0)global.chara_hp-=1
@@ -46,3 +49,4 @@ function player_hurt()
 	}
 	with(fsq_father)instance_destroy(id,false)
 }
+
