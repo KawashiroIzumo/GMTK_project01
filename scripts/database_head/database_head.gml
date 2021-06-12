@@ -65,5 +65,18 @@ function database_head()
 	global.head_lock[i]=1
 	#endregion
 	//_________---------------__________________-------------
+	i=12
+	#region G胖
+	global.head_name[i]="G胖"
+	global.head_spr[i]=head12_G
+	global.head_danmaku_player[i]=pfsq12_G
+	global.head_danmaku_enemy[i]=fsq12_discount
+	global.head_ai[i]=test_ai_randomfly
+	global.head_hp[i]=100
+	global.head_spd[i]=6
+	global.head_spd_player[i]=12
+	global.head_lock[i]=1
+	#endregion
+	//_________---------------__________________-------------
 	global.head_num=i+1
 }
