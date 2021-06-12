@@ -8,6 +8,7 @@ flag_attack=false
 ls_pdd_direction=0;
 image_xscale=0.5;
 image_yscale=0.5;
+image_angle=-90
 attack_cold=20
 head_vx_start=64
 head_vy_start=0

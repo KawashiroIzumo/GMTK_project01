@@ -6,6 +6,7 @@ if(team==0)
 {
 	with(enemy)
 	{
+		if(hp<=0)continue;
 		if(point_distance(x,y,other.x,other.y)<=pd+32)
 		{
 			hp+=other.atk
