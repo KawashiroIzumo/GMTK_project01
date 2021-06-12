@@ -212,6 +212,7 @@
     {"id":{"name":"se_enep00","path":"sounds/se_enep00/se_enep00.yy",},"order":6,},
     {"id":{"name":"ObsBlock","path":"objects/ObsBlock/ObsBlock.yy",},"order":0,},
     {"id":{"name":"gui_disappear_something","path":"scripts/gui_disappear_something/gui_disappear_something.yy",},"order":1,},
+    {"id":{"name":"d55_discount","path":"sprites/d55_discount/d55_discount.yy",},"order":26,},
     {"id":{"name":"create_danmaku","path":"scripts/create_danmaku/create_danmaku.yy",},"order":0,},
     {"id":{"name":"d10_card_huge","path":"sprites/d10_card_huge/d10_card_huge.yy",},"order":11,},
     {"id":{"name":"sound30_crow1","path":"sounds/sound30_crow1/sound30_crow1.yy",},"order":13,},
