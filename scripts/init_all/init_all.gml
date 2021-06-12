@@ -21,6 +21,8 @@ function init_all()
 	global.head_list=ds_list_create();
 	global.font_m=font_add("fonts\\SOURCEHANSERIFCN-HEAVY.OTF",18,1,0,0,65535);
 	global.font_s=font_add("fonts\\SOURCEHANSERIFCN-HEAVY.OTF",12,1,0,0,65535);
+	global.stage_progress=0
+	global.stage_progress_max=50
 	global.chara_hp=3
 	global.stage_running=true
 	global.head_list_size_max=20
