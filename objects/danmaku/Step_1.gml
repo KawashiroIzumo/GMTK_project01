@@ -6,7 +6,7 @@ if(team==0)
 {
 	with(enemy)
 	{
-		if(point_distance(x,y,other.x,other.y)<=pd+32)
+		if(point_distance(x,y,other.x,other.y)<=pd+32 && hp>0)
 		{
 			hp+=other.atk
 			sound_SE_play_gain(other.hitsound,0,1)
