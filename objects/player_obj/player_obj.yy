@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "c00_player",
-    "path": "sprites/c00_player/c00_player.yy",
+    "name": "c00_player_spr",
+    "path": "sprites/c00_player_spr/c00_player_spr.yy",
   },
   "solid": false,
   "visible": true,

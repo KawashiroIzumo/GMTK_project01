@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"SE26_hurry","path":"sounds/SE26_hurry/SE26_hurry.yy",},"order":26,},
     {"id":{"name":"se_enep01","path":"sounds/se_enep01/se_enep01.yy",},"order":7,},
+    {"id":{"name":"c00_player_spr","path":"sprites/c00_player_spr/c00_player_spr.yy",},"order":1,},
     {"id":{"name":"d47_greeneye_circle","path":"sprites/d47_greeneye_circle/d47_greeneye_circle.yy",},"order":17,},
     {"id":{"name":"head01_nitori","path":"sprites/head01_nitori/head01_nitori.yy",},"order":1,},
     {"id":{"name":"gui_pdd","path":"sprites/gui_pdd/gui_pdd.yy",},"order":0,},
