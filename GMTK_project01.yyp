@@ -185,6 +185,7 @@
     {"id":{"name":"d22_butterfly_l","path":"sprites/d22_butterfly_l/d22_butterfly_l.yy",},"order":26,},
     {"id":{"name":"create_danmaku_enemy","path":"scripts/create_danmaku_enemy/create_danmaku_enemy.yy",},"order":2,},
     {"id":{"name":"d23_water","path":"sprites/d23_water/d23_water.yy",},"order":27,},
+    {"id":{"name":"d56_discountPlayer","path":"sprites/d56_discountPlayer/d56_discountPlayer.yy",},"order":27,},
     {"id":{"name":"sound9_cao","path":"sounds/sound9_cao/sound9_cao.yy",},"order":25,},
     {"id":{"name":"sound33_crow4","path":"sounds/sound33_crow4/sound33_crow4.yy",},"order":16,},
     {"id":{"name":"tittle_f91","path":"sprites/tittle_f91/tittle_f91.yy",},"order":6,},
