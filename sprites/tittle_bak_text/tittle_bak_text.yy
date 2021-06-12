@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 775,
+  "bbox_right": 706,
   "bbox_top": 0,
-  "bbox_bottom": 312,
+  "bbox_bottom": 419,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 776,
-  "height": 313,
+  "width": 707,
+  "height": 420,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b299e6d1-4052-48a4-8ee1-3e905bc0a18e","path":"sprites/tittle_bak_text/tittle_bak_text.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b299e6d1-4052-48a4-8ee1-3e905bc0a18e","path":"sprites/tittle_bak_text/tittle_bak_text.yy",},"LayerId":{"name":"6553e1b6-d54a-4526-a4d5-6a6464893892","path":"sprites/tittle_bak_text/tittle_bak_text.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"tittle_bak_text","path":"sprites/tittle_bak_text/tittle_bak_text.yy",},"resourceVersion":"1.0","name":"b299e6d1-4052-48a4-8ee1-3e905bc0a18e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"459570ec-672e-4798-9935-4cf5626081ad","path":"sprites/tittle_bak_text/tittle_bak_text.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"459570ec-672e-4798-9935-4cf5626081ad","path":"sprites/tittle_bak_text/tittle_bak_text.yy",},"LayerId":{"name":"daac1f0e-32cb-438a-81bc-377b69ef9e9c","path":"sprites/tittle_bak_text/tittle_bak_text.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"tittle_bak_text","path":"sprites/tittle_bak_text/tittle_bak_text.yy",},"resourceVersion":"1.0","name":"459570ec-672e-4798-9935-4cf5626081ad","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"tittle_bak_text","path":"sprites/tittle_bak_text/tittle_bak_text.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"02470376-cc42-453c-9030-05d13952b27a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b299e6d1-4052-48a4-8ee1-3e905bc0a18e","path":"sprites/tittle_bak_text/tittle_bak_text.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0ae64ead-8944-4119-aa67-c6ce32a84fbe","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"459570ec-672e-4798-9935-4cf5626081ad","path":"sprites/tittle_bak_text/tittle_bak_text.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,12 +65,12 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6553e1b6-d54a-4526-a4d5-6a6464893892","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"daac1f0e-32cb-438a-81bc-377b69ef9e9c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "标题画面",
-    "path": "folders/精灵/GUI/标题画面.yy",
+    "name": "GUI",
+    "path": "folders/精灵/GUI.yy",
   },
   "resourceVersion": "1.0",
   "name": "tittle_bak_text",

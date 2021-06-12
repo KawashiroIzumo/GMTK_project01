@@ -44,10 +44,9 @@ draw_set_alpha(1-by)
 draw_sprite(tittle_bak_linw,0,vx,vy)
 vy-=32
 vx+=64
-for(i=0;i<4;i++)
+for(i=0;i<3;i++)
 {
 	colora=c_white
-	if(i==1)colora=c_gray
 	if(p_page>=0&&p_page!=i)colora=c_gray
 	if(colora==c_gray)shader_set(shd00_heibai)
 	draw_sprite(pause_button,i,vx,vy)
@@ -62,7 +61,7 @@ for(i=0;i<4;i++)
 			sound_SE_play(SEgkgf03_sound16,0)
 			if(p_page==i)
 			{
-				if(p_page==2)
+				if(p_page==1)
 				{
 					add_cofing_save(working_directory+"\\a_cofing.ini");
 				}
@@ -71,7 +70,7 @@ for(i=0;i<4;i++)
 			else
 			{
 				if(i==0)instance_destroy()
-				else if(i==3)game_restart()
+				else if(i==2)game_restart()
 				else p_page=i
 			}
 		}
@@ -88,7 +87,7 @@ if(p_page==-1)
 }
 #endregion
 #region 设置界面
-if(p_page==2)
+if(p_page==1)
 {
 	global.bgm=noone
 	vx=32

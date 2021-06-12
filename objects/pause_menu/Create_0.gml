@@ -6,5 +6,6 @@ p_page=-1
 p_index=-1
 alarm[3]=30
 alarm[1]=1
-lsbgm=global.bgm
-sound_SE_play(SEshy17_ice06,0)
+lsbgm=global.Fbgm
+global.Fbgm=-1
+sound_SE_play(se_pause,0)

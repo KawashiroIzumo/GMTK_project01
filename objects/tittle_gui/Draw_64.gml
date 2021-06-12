@@ -6,12 +6,8 @@ my=device_mouse_y_to_gui(0)
 
 gw=display_get_gui_width()
 gh=display_get_gui_height()
-#region 宇宙背景
-vw=sprite_get_width(tittle_bak_universe)
-draw_sprite(tittle_bak_universe,0,bak_vx,0)
-draw_sprite(tittle_bak_universe,0,bak_vx+vw,0)
-bak_vx-=1
-if(bak_vx<-vw)bak_vx+=vw
+#region 背景
+draw_sprite(tittle_bak,0,0,0)
 #endregion
 #region 计算缓动
 bx=0
@@ -22,32 +18,9 @@ if(alarm[3]>0)
 	by=1-animcurve_channel_evaluate(vc,1-alarm[3]/30)
 }
 #endregion
-#region 绘制标题文本
-vx=bx+28
-vy=-by*192
-draw_sprite(tittle_bak_text,0,vx,vy)
-#endregion
-#region 黄旭东
-//绘制孙一峰
-vx=1001
-vy=469
-draw_sprite(tittle_f91,0,vx,vy)
-//绘制黄旭东脚下的盘子
-vx=1049
-vy=462
-gpu_set_blendmode(bm_add)
-draw_sprite(tittle_bak_floor,0,vx,vy)
-gpu_set_blendmode(bm_normal)
-//绘制黄旭东
-vx=1063
-vy=309
-/*
-lsspr=thca1504_kishin_stand
-if(p_page==1)lsspr=thca1504_kishin_read
-if(p_page==2)lsspr=thca1504_kishin_think
-draw_sprite_ext(lsspr,image_index,vx,vy,-1,1,0,c_white,1)
-*/
-#endregion
+vx=960+96
+vy=360
+draw_skeleton(c00_player_spr,"FLY_STAND","default",image_index,vx,vy,1.6,1.6,0,c_white,1)
 #region 功能区
 vx=0
 vy=512-by*64

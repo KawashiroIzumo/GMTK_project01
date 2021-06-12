@@ -86,4 +86,10 @@ if(!cold)
 		}
 		#endregion
 	}
+	#region 唤起菜单
+	if(keyboard_check_released(vk_escape))
+	{
+		instance_create_layer(0,0,"system_layer",pause_menu)
+	}
+	#endregion
 }
