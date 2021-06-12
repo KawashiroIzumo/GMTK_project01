@@ -10,8 +10,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "seGMTK01_inhale.mp3",
-  "duration": 1.676837,
+  "soundFile": "seGMTK01_inhale.wav",
+  "duration": 2.114524,
   "parent": {
     "name": "GMTK_sound_effect",
     "path": "folders/声音/GMTK_sound_effect.yy",
