@@ -1,20 +1,19 @@
 {
-  "name": "player_absorb_spr",
-  "HTile": false,
-  "VTile": false,
-  "For3D": false,
+  "bboxMode": 0,
+  "collisionKind": 1,
+  "type": 0,
+  "origin": 3,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
+  "swfPrecision": 2.525,
   "bbox_left": 0,
   "bbox_right": 222,
   "bbox_top": 0,
   "bbox_bottom": 201,
-  "origin": 3,
-  "bboxMode": 0,
-  "collisionKind": 1,
-  "type": 0,
-  "swfPrecision": 2.525,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
   "width": 240,
   "height": 202,
   "textureGroupId": {
@@ -30,11 +29,6 @@
       ],"parent":{"name":"player_absorb_spr","path":"sprites/player_absorb_spr/player_absorb_spr.yy",},"resourceVersion":"1.0","name":"d3ac10d8-2f99-4ca7-bb49-5f7089c5be64","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"39c3bbb0-0bbb-49cb-b8f1-476289a0bd86","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d3ac10d8-2f99-4ca7-bb49-5f7089c5be64","path":"sprites/player_absorb_spr/player_absorb_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
-    ],
     "spriteId": {"name":"player_absorb_spr","path":"sprites/player_absorb_spr/player_absorb_spr.yy",},
     "timeUnits": 1,
     "playback": 1,
@@ -45,6 +39,11 @@
     "length": 1.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"39c3bbb0-0bbb-49cb-b8f1-476289a0bd86","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d3ac10d8-2f99-4ca7-bb49-5f7089c5be64","path":"sprites/player_absorb_spr/player_absorb_spr.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+    ],
     "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
@@ -74,6 +73,7 @@
     "path": "folders/精灵/GUI.yy",
   },
   "resourceVersion": "1.0",
+  "name": "player_absorb_spr",
   "tags": [],
   "resourceType": "GMSprite",
 }

@@ -12,12 +12,13 @@ function database_head()
 		global.head_ai[i]=empty_timeline
 		global.head_hp[i]=100
 		global.head_spd[i]=6
+		global.head_lock[i]=false
 		global.head_spd_player[i]=6
 	}
 	//_________---------------__________________-------------
 	i=0
-	#region 基本头
-	global.head_name[i]="测试用基本头"
+	#region 格林炸裂
+	global.head_name[i]="格林炸裂"
 	global.head_spr[i]=head00_kailu
 	global.head_danmaku_player[i]=pfsq00_greenburst
 	global.head_danmaku_enemy[i]=fsq00_greenburst
@@ -27,8 +28,6 @@ function database_head()
 	global.head_spd_player[i]=12
 	#endregion
 	//_________---------------__________________-------------
-<<<<<<< Updated upstream
-=======
 	i=1
 	#region 深海创伤后遗症
 	global.head_name[i]="深海创伤后遗症"
@@ -79,6 +78,5 @@ function database_head()
 	global.head_lock[i]=1
 	#endregion
 	//_________---------------__________________-------------
->>>>>>> Stashed changes
 	global.head_num=i+1
 }

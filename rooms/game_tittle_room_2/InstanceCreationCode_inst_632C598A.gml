@@ -1,0 +1,1 @@
+sprite_index=gui_stagetittle02c

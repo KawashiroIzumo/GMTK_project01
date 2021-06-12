@@ -21,13 +21,17 @@ function init_all()
 	global.head_list=ds_list_create();
 	global.font_m=font_add("fonts\\SOURCEHANSERIFCN-HEAVY.OTF",18,1,0,0,65535);
 	global.font_s=font_add("fonts\\SOURCEHANSERIFCN-HEAVY.OTF",12,1,0,0,65535);
+	global.stage_progress=0
+	global.stage_progress_max=50
 	global.chara_hp=3
 	global.stage_running=true
-	global.head_list_size_max=24
+	global.head_list_size_max=20
 	global.cofing_BGM_sound=100
 	global.cofing_SE_sound=80
 	global.gamemode_soundtest=false
 	global.shock=0
 	global.boss=noone
+	init_cofing()
+	init_test()
 	database_all()
 }

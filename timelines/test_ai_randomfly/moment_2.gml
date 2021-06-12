@@ -3,6 +3,10 @@ var pflag=0;
 //if(irandom(100)<40)instance_destroy()
 //show_message("???")
 create_danmaku_enemy(x,y,hid)
+if(x<-128||y<-128||y>room_height+128)
+{
+	instance_destroy(id,false)
+}
 memory_variable[4]=irandom(360)
 memory_variable[3]--
 if(memory_variable[3]<0)

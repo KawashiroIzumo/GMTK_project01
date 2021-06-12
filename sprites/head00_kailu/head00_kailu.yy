@@ -1,22 +1,21 @@
 {
-  "name": "head00_kailu",
-  "HTile": false,
-  "VTile": false,
-  "For3D": false,
-  "preMultiplyAlpha": false,
-  "edgeFiltering": false,
-  "collisionTolerance": 0,
-  "bbox_left": 1,
-  "bbox_right": 60,
-  "bbox_top": 3,
-  "bbox_bottom": 60,
-  "origin": 4,
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
+  "origin": 4,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "width": 64,
-  "height": 64,
+  "bbox_left": 24,
+  "bbox_right": 103,
+  "bbox_top": 26,
+  "bbox_bottom": 115,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 128,
+  "height": 128,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -25,16 +24,11 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"4ccb0749-c83d-4931-9109-65a83c1ea7bc","path":"sprites/head00_kailu/head00_kailu.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4ccb0749-c83d-4931-9109-65a83c1ea7bc","path":"sprites/head00_kailu/head00_kailu.yy",},"LayerId":{"name":"f9895762-9ef9-4414-a3bf-c38f984cd67c","path":"sprites/head00_kailu/head00_kailu.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"head00_kailu","path":"sprites/head00_kailu/head00_kailu.yy",},"resourceVersion":"1.0","name":"4ccb0749-c83d-4931-9109-65a83c1ea7bc","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"480d9cdc-dacd-479a-9b36-869a4685a0d0","path":"sprites/head00_kailu/head00_kailu.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"480d9cdc-dacd-479a-9b36-869a4685a0d0","path":"sprites/head00_kailu/head00_kailu.yy",},"LayerId":{"name":"770100f5-a6c2-4b61-aa3a-4306de17fcb4","path":"sprites/head00_kailu/head00_kailu.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"head00_kailu","path":"sprites/head00_kailu/head00_kailu.yy",},"resourceVersion":"1.0","name":"480d9cdc-dacd-479a-9b36-869a4685a0d0","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"4e10d6b6-4773-46cb-aacd-ac22edc2ada6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4ccb0749-c83d-4931-9109-65a83c1ea7bc","path":"sprites/head00_kailu/head00_kailu.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
-    ],
     "spriteId": {"name":"head00_kailu","path":"sprites/head00_kailu/head00_kailu.yy",},
     "timeUnits": 1,
     "playback": 1,
@@ -45,6 +39,11 @@
     "length": 1.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"cd78b16d-f948-4844-994c-1ff679c5a6bd","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"480d9cdc-dacd-479a-9b36-869a4685a0d0","path":"sprites/head00_kailu/head00_kailu.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+    ],
     "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
@@ -55,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 32,
-    "yorigin": 32,
+    "xorigin": 64,
+    "yorigin": 64,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"head00_kailu","path":"sprites/head00_kailu/head00_kailu.yy",},
@@ -66,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f9895762-9ef9-4414-a3bf-c38f984cd67c","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"770100f5-a6c2-4b61-aa3a-4306de17fcb4","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -74,6 +73,7 @@
     "path": "folders/精灵/头.yy",
   },
   "resourceVersion": "1.0",
+  "name": "head00_kailu",
   "tags": [],
   "resourceType": "GMSprite",
 }

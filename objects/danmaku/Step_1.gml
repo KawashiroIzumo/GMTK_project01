@@ -6,6 +6,7 @@ if(team==0)
 {
 	with(enemy)
 	{
+		if(hp<=0)continue;
 		if(point_distance(x,y,other.x,other.y)<=pd+32)
 		{
 			hp+=other.atk
@@ -13,6 +14,7 @@ if(team==0)
 			if(!other.udi)
 			{
 				flag_destroy=1
+				//break;
 			}
 		}
 	}
@@ -27,26 +29,7 @@ else if(team==1)
 			if(!udi)
 			{
 				sound_SE_play(other.hitsound,0)
-				sound_SE_play(SE00_water06,0)
-				udi=1
-				cold=1
-				global.shock=15
-				instance_create_depth(x,y,depth-1,enemy_death_fx)
-				ds_list_clear(global.head_list)
-				x=-256
-				y=360
-				direction=0
-				speed=8
-				alarm[3]=30
-				alarm[4]=60
-				with(enemy)
-				{
-					if(global.boss!=id)instance_destroy()
-				}
-				with(danmaku)
-				{
-					flag_destroy=1
-				}
+				player_hurt()
 			}
 			if(!other.udi)
 			{

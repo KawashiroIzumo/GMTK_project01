@@ -6,7 +6,7 @@ if(team==0)
 }
 for(i=0;i<360;i+=30)
 {
-	a=create_danmaku(x,y,c_purple,d04_jade_c,6,i,0,0,-100)
+	a=create_danmaku(x,y,c_purple,d04_jade_c,6,i+lsdre,0,0,-100)
 	a.team=team
 	a.alarm[3]=30
 	if(team==0)

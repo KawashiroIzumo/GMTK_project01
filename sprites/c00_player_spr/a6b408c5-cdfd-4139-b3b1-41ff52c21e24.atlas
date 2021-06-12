@@ -1,0 +1,83 @@
+
+costom_pliot.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+碇源堂 动作/1
+  rotate: false
+  xy: 2, 2
+  size: 324, 120
+  orig: 324, 120
+  offset: 0, 0
+  index: -1
+碇源堂 动作/上衣
+  rotate: false
+  xy: 132, 180
+  size: 52, 72
+  orig: 52, 72
+  offset: 0, 0
+  index: -1
+碇源堂 动作/图层_2
+  rotate: false
+  xy: 2, 124
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+碇源堂 动作/手
+  rotate: false
+  xy: 216, 220
+  size: 28, 32
+  orig: 28, 32
+  offset: 0, 0
+  index: -1
+碇源堂 动作/手_副本
+  rotate: false
+  xy: 216, 220
+  size: 28, 32
+  orig: 28, 32
+  offset: 0, 0
+  index: -1
+碇源堂 动作/手臂
+  rotate: false
+  xy: 132, 134
+  size: 28, 44
+  orig: 28, 44
+  offset: 0, 0
+  index: -1
+碇源堂 动作/手臂_副本
+  rotate: false
+  xy: 162, 134
+  size: 28, 44
+  orig: 28, 44
+  offset: 0, 0
+  index: -1
+碇源堂 动作/脚
+  rotate: false
+  xy: 192, 134
+  size: 36, 56
+  orig: 36, 56
+  offset: 0, 0
+  index: -1
+碇源堂 动作/脚_副本
+  rotate: false
+  xy: 192, 134
+  size: 36, 56
+  orig: 36, 56
+  offset: 0, 0
+  index: -1
+碇源堂 动作/腿
+  rotate: false
+  xy: 186, 192
+  size: 28, 60
+  orig: 28, 60
+  offset: 0, 0
+  index: -1
+碇源堂 动作/腿_副本
+  rotate: false
+  xy: 186, 192
+  size: 28, 60
+  orig: 28, 60
+  offset: 0, 0
+  index: -1
