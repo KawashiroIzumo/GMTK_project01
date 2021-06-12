@@ -1,4 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-image_alpha=1
-alarm[1]=90
+if(team==0)alarm[0]*=2

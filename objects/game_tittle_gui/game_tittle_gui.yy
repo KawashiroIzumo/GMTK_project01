@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "gui_stagetittle01c",
+    "path": "sprites/gui_stagetittle01c/gui_stagetittle01c.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -19,16 +22,17 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "弹幕发射器",
-    "path": "folders/物体/弹幕/弹幕发射器.yy",
+    "name": "特效",
+    "path": "folders/物体/特效.yy",
   },
   "resourceVersion": "1.0",
-  "name": "fsq_father",
+  "name": "game_tittle_gui",
   "tags": [],
   "resourceType": "GMObject",
 }

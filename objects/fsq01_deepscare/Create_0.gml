@@ -1,5 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-image_alpha=0
+
+// Inherit the parent event
+event_inherited();
+lsdre=irandom(30)
+jd=1
 alarm[0]=30
-sound_SE_play(seGMTK00_guitar05,0)
+alarm[2]=1
+alarm[1]=6

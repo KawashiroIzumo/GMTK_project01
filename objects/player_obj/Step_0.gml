@@ -67,4 +67,20 @@ if(!cold)
 		else flag_attack=false
 	}
 	#endregion
+	#region 换弹处理
+	if(!flag_attack)
+	{
+		if(ds_exists(global.head_list,ds_type_list))
+		{
+			ls_list_size=ds_list_size(global.head_list)
+			if(keyboard_check_pressed(ord("C"))&&ls_list_size>1)
+			{
+				a=global.head_list[| 0]
+				ds_list_delete(global.head_list,0)
+				ds_list_add(global.head_list,a)
+				sound_SE_play(se_graze,0)
+			}
+		}
+	}
+	#endregion
 }

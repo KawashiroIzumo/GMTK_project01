@@ -27,6 +27,18 @@ function database_head()
 	global.head_spd_player[i]=12
 	#endregion
 	//_________---------------__________________-------------
+	i=1
+	#region 深海创伤后遗症
+	global.head_name[i]="深海创伤后遗症"
+	global.head_spr[i]=head01_nitori
+	global.head_danmaku_player[i]=pfsq00_greenburst
+	global.head_danmaku_enemy[i]=fsq01_deepscare
+	global.head_ai[i]=test_ai_rhit
+	global.head_hp[i]=200
+	global.head_spd[i]=6
+	global.head_spd_player[i]=12
+	#endregion
+	//_________---------------__________________-------------
 	i=2
 	#region 懒散波动
 	global.head_name[i]="懒散波动"
