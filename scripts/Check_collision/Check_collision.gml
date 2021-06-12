@@ -7,14 +7,11 @@ function Check_Head_Collision(vx,vy)
 	   }
 	else if keyboard_check(vk_up)
 	   {
-			if !place_free(vx, vy - 5) return true;
+			if (!place_free(vx, vy - 5) && place_free(vx, vy + 5)) return true;
 	   }
 	else if keyboard_check(vk_down)
 	   {
-			if !place_free(vx, vy + 5) return true;
+			if (!place_free(vx, vy + 5) && place_free(vx, vy - 5)) return true;
 	   }
-	else
-		{
-			return false;
-		}
+	return false;
 }

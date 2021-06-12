@@ -14,13 +14,17 @@ function Check_Collision()
 		vy=y+head_vy_start
 		for(i=0;i<ls_list_size;i++)
 		{
-			//draw_sprite_ext(Sprite74,0,vx,vy,0.5,0.5,0,c_white,1)
 			var sflag=false
 			with(head_collision)
 			{
 				sflag=check_collision(vx,vy)
+				show_debug_message(sflag);
 			}
-			return sflag;
+			if(sflag)
+			{
+				flag_Block=true;
+				return true;
+			}
 			vx+=24
 			vy+=head_y_plus*i/8
 		}
@@ -36,15 +40,18 @@ if(!cold)
 		lspd=spd/2
 		lsyspeed=yspeed/2
 	}
+
 	if(!Check_Collision())
 	{
 	if(keyboard_check(vk_right))
 	{
 		x+=lspd;
+		flag_Block=false;
 	}
 	if(keyboard_check(vk_left))
 	{
 		x-=lspd;
+		flag_Block=false;
 	}
 	if(keyboard_check(vk_up))
 	{
@@ -52,16 +59,17 @@ if(!cold)
 		head_y_plus+=lsyspeed
 		if(head_y_plus>ytarget)head_y_plus=ytarget
 		yflag=true;
+		flag_Block=false;
 	}
 	if(keyboard_check(vk_down))
 	{
 		y+=lspd;
 		head_y_plus-=lsyspeed
 		if(head_y_plus<-ytarget)head_y_plus=-ytarget
-	
 		yflag=true;
+		flag_Block=false;
 	}
-	if(!yflag)//没有按上下时，尝试将甩开的头复位
+	if(!yflag && !flag_Block)//没有按上下时，尝试将甩开的头复位
 	{
 		if(head_y_plus>0)head_y_plus-=yspeed*2
 		else if(head_y_plus<0)head_y_plus+=yspeed*2
