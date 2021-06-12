@@ -271,10 +271,10 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"init_room","path":"rooms/init_room/init_room.yy",},},
     {"roomId":{"name":"tittle_room","path":"rooms/tittle_room/tittle_room.yy",},},
-    {"roomId":{"name":"game_tittle_room_2","path":"rooms/game_tittle_room_2/game_tittle_room_2.yy",},},
-    {"roomId":{"name":"game_room_2","path":"rooms/game_room_2/game_room_2.yy",},},
     {"roomId":{"name":"game_tittle_room","path":"rooms/game_tittle_room/game_tittle_room.yy",},},
     {"roomId":{"name":"game_room","path":"rooms/game_room/game_room.yy",},},
+    {"roomId":{"name":"game_tittle_room_2","path":"rooms/game_tittle_room_2/game_tittle_room_2.yy",},},
+    {"roomId":{"name":"game_room_2","path":"rooms/game_room_2/game_room_2.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/精灵.yy","order":1,"resourceVersion":"1.0","name":"精灵","tags":[],"resourceType":"GMFolder",},

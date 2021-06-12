@@ -3,7 +3,7 @@ var pflag=0;
 if(global.stage_running==false)pflag=0//如果处于冷却期就暂不刷怪
 else
 {
-	pflag=choose(1,2,3,4)
+	pflag=choose(1,2,3,4,5)
 	memory_variable[1]=0
 	global.stage_progress++
 	if(global.stage_progress>=global.stage_progress_max)
@@ -31,6 +31,13 @@ if(pflag==3)//河童部队
 {
 	timeline_position=259
 	memory_variable[1]=5
+	memory_variable[2]=640-irandom(128)
+	memory_variable[3]=128
+}
+if(pflag==5)//G胖商团
+{
+	timeline_position=639
+	memory_variable[1]=3
 	memory_variable[2]=640-irandom(128)
 	memory_variable[3]=128
 }
