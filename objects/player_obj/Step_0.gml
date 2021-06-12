@@ -1,6 +1,28 @@
 /// @description Insert description here
 // You can write your code in this editor
 var lspd=spd,yflag=false,yspeed=0.4,ytarget=6,lsyspeed=yspeed;
+
+function Check_Collision()
+{
+	var ls_list_size=-1;
+	var vx,vy,i;
+	if(Check_Head_Collision(x,y)) return true;
+	if(ds_exists(global.head_list,ds_type_list))ls_list_size=ds_list_size(global.head_list)
+	if(ls_list_size>0)//有头的场合
+	{
+		vx=x+head_vx_start
+		vy=y+head_vy_start
+		for(i=0;i<ls_list_size;i++)
+		{
+			draw_sprite_ext(Sprite74,0,vx,vy,0.5,0.5,0,c_white,1)
+			if(head_collision.check_collision(vx,vy)) return true;
+			vx+=24
+			vy+=head_y_plus*i/8
+		}
+	}
+	return false;
+}
+
 if(!cold)
 {
 	#region 移动处理
@@ -9,6 +31,8 @@ if(!cold)
 		lspd=spd/2
 		lsyspeed=yspeed/2
 	}
+	if(!Check_Collision())
+	{
 	if(keyboard_check(vk_right))
 	{
 		x+=lspd;
@@ -43,6 +67,7 @@ if(!cold)
 	if(x<=0)x=0;
 	if(y>=room_height)y=room_height;
 	if(y<=0)y=0;
+	}
 	#endregion
 	#region 射击处理
 	attack_cold--
