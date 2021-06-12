@@ -1,0 +1,149 @@
+/// @description Insert description here
+// You can write your code in this editor
+if(nowbgm!=global.Fbgm)//老板换碟
+{
+	if(global.Fbgm>=0)
+	{
+		now_bgm_lb=global.bgm_loop_begin[global.Fbgm]/1000
+		now_bgm_le=global.bgm_loop_end[global.Fbgm]/1000
+		now_bgm_bt=global.bgm_blend_time[global.Fbgm]/60
+	}
+	for(i=0;i<10;i++)
+	{
+		if(global.bgm_channel_fadeout[i]==noone)
+		{
+			if(nowbgm>=0)
+			{
+				global.bgm_channel_fadeout[i]=global.bgm_channel
+				global.bgm_channel_fadeout_time[i]=global.bgm_blend_time[nowbgm]/3
+				global.bgm_channel_fadeout_vol[i]=1
+			}
+			global.bgm_channel=noone
+			if(global.Fbgm<0)
+			{
+				global.bgm_channel_vol=1
+				global.bgm_channle_fadein_time=0
+			}
+			else 
+			{
+				var k,j;
+				k=global.Fbgm
+				for(j=0;j<25;j++)
+				{
+					if(global.bgm_flocate[k,j]=="")
+					{
+						continue;
+					}
+					else
+					{
+						global.bgm_channel=audio_play_sound(global.bgm_assect[k,j],1,1)
+						break
+					}
+				}
+				if(!global.bgm_played[k])
+				{
+					global.bgm_channel_vol=1
+					global.bgm_channle_fadein_time=0
+				}
+				else
+				{
+					global.bgm_channel_vol=-0.5
+					global.bgm_channle_fadein_time=global.bgm_blend_time[k]/3
+					var vt=0,vbegin=global.bgm_loop_begin[k]/1000,vend=global.bgm_loop_end[k]/1000-global.bgm_blend_time[k]/60*2
+					vt=irandom_range(vbegin,vend)
+					audio_sound_set_track_position(global.bgm_channel,vt)
+				}
+				global.bgm_played[k]=true
+			}
+			break;
+		}
+	}
+	nowbgm=global.Fbgm
+}
+//bgm渐入处理
+if(global.bgm_channle_fadein_time>0)
+{
+	global.bgm_channel_vol+=1/global.bgm_channle_fadein_time
+	if(global.bgm_channel_vol>=1)
+	{
+		global.bgm_channel_vol=1
+		global.bgm_channle_fadein_time=0
+	}
+	
+}
+if(/*instance_exists(empty_obj)*/false)
+{
+	if(soundblv>0.4)soundblv-=0.02
+	else soundblv=0.4
+}
+else
+{
+	if(soundblv<1)soundblv+=0.02
+	else soundblv=1
+}
+
+audio_sound_gain(global.bgm_channel,max(0,global.bgm_channel_vol)*global.cofing_BGM_sound/100*soundblv,0)
+//bgm内循环
+if(nowbgm>=0)
+{
+	var mstime=audio_sound_get_track_position(global.bgm_channel);
+	if(mstime*1000>=global.bgm_loop_end[nowbgm])
+	{
+		//show_message("循环！")
+		for(i=0;i<10;i++)
+		{
+			if(global.bgm_channel_fadeout[i]==noone)
+			{
+				if(nowbgm>=0)
+				{
+					global.bgm_channel_fadeout[i]=global.bgm_channel
+					global.bgm_channel_fadeout_time[i]=global.bgm_blend_time[nowbgm]
+					global.bgm_channel_fadeout_vol[i]=1
+				}
+				global.bgm_channel=noone
+				if(global.Fbgm<0)
+				{
+					global.bgm_channel_vol=1
+					global.bgm_channle_fadein_time=0
+				}
+				else 
+				{
+					var k,j;
+					k=nowbgm
+					for(j=0;j<25;j++)
+					{
+						if(global.bgm_flocate[k,j]=="")
+						{
+							continue;
+						}
+						else
+						{
+							global.bgm_channel=audio_play_sound(global.bgm_assect[k,j],1,1)
+						}
+					}
+					global.bgm_channel_vol=0
+					global.bgm_channle_fadein_time=global.bgm_blend_time[k]
+					audio_sound_set_track_position(global.bgm_channel,global.bgm_loop_begin[k]/1000)
+				}
+				break;
+			}
+		}
+	}
+}
+//十条渐出线处理
+for(i=0;i<10;i++)
+{
+	if(global.bgm_channel_fadeout[i]!=noone)
+	{
+		global.bgm_channel_fadeout_vol[i]-=1/global.bgm_channel_fadeout_time[i]
+		if(global.bgm_channel_fadeout_vol[i]<=0)
+		{
+			audio_stop_sound(global.bgm_channel_fadeout[i])
+			global.bgm_channel_fadeout[i]=noone
+		}
+		else
+		{
+			audio_sound_gain(global.bgm_channel_fadeout[i],global.bgm_channel_fadeout_vol[i]*global.cofing_BGM_sound/100,0)
+		}
+	}
+}

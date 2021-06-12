@@ -1,0 +1,60 @@
+/// @description 判定
+// You can write your code in this editor
+if(ondraw&&l_warning<0)
+{
+	var vx,vy;
+	if(type==0)
+	{
+		if(instance_exists(l_father))
+		{
+			x=l_father.x
+			y=l_father.y
+		}
+		ex=x+dcos(l_direction)*l_long
+		ey=y-dsin(l_direction)*l_long
+	}
+	else
+	{
+		if(instance_exists(wl_fat))
+		{
+			ex=wl_fat.x
+			ey=wl_fat.y
+		}
+		else
+		{
+			ex=x
+			ey=y
+		}
+	}
+	vx=ex+dcos(l_direction)*l_long
+	vy=ey-dsin(l_direction)*l_long
+	if(instance_exists(player_obj))
+	{
+		vx=player_obj.x
+		vy=player_obj.y
+	}
+	if(
+		point_in_triangle(
+		vx,vy,
+		x+dcos(l_direction-45)*l_wide,y-dsin(l_direction-45)*l_wide,
+		x-dcos(l_direction-45)*l_wide,y+dsin(l_direction-45)*l_wide,
+		ex+dcos(l_direction-45)*l_wide,ey-dsin(l_direction-45)*l_wide
+		)||
+		point_in_triangle(
+		vx,vy,
+		ex+dcos(l_direction-45)*l_wide,ey-dsin(l_direction-45)*l_wide,
+		ex-dcos(l_direction-45)*l_wide,ey+dsin(l_direction-45)*l_wide,
+		x-dcos(l_direction-45)*l_wide,y+dsin(l_direction-45)*l_wide
+		)
+		&&l_damagecold==0
+	)
+	{
+		a=create_danmaku(vx,vy,l_colora,d19_jade_lxw,0,0,0,0,atk*5)
+		l_damagecold=6
+		a.alarm[3]=2
+		a.fatk=fatk
+		a.element=element
+	}
+	l_damagecold-=1
+	if(l_damagecold<0)l_damagecold=0
+}

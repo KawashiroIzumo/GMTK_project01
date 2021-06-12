@@ -1,0 +1,41 @@
+if(ondraw&&l_warning>=0)
+{
+    l_warning--
+	if(l_warning<0&&audio_exists(burstsound))
+	{
+		sound_SE_play(burstsound,0)
+		if(l_life<=0)instance_destroy()
+	}
+}
+if(ondraw&&l_warning<0)
+{
+    if(type==0)
+    {
+       
+    }
+    else if(type==2)
+    {
+        direction+=rotate_speed
+    }
+    //
+    l_life--
+    if(type==2&&wl_xz==false)
+    {
+        wl_xz=true
+        a=instance_create_depth(x,y,depth,laser)
+        a.l_colora=l_colora
+        a.wl_fat=id
+        a.l_wide=l_wide
+        a.type=type
+        a.l_direction=direction
+        a.wl_speed=wl_speed
+        a.l_warning=1
+        a.rotate_speed=rotate_speed
+        a.alarm[0]=2
+        a.l_life=l_life-5
+        a.wl_gravity=wl_gravity
+        a.wl_gravity_direction=wl_gravity_direction
+    }
+    if(l_life<10)l_wide*=0.9
+    if(l_life<0)instance_destroy()
+}
