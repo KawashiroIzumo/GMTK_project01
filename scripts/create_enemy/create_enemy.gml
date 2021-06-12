@@ -24,7 +24,7 @@ function enemy_fill(objid,hid)
 		ai_tml=global.head_ai[hid]
 		//show_message(timeline_get_name(ai_tml))
 		spd=global.head_spd[hid]
-		image_index=-1
+		image_xscale=-1
 		timeline_index=ai_tml
 		timeline_loop=0
 		timeline_position=-1

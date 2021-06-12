@@ -23,7 +23,7 @@ function init_all()
 	global.font_s=font_add("fonts\\SOURCEHANSERIFCN-HEAVY.OTF",12,1,0,0,65535);
 	global.chara_hp=3
 	global.stage_running=true
-	global.head_list_size_max=24
+	global.head_list_size_max=20
 	global.cofing_BGM_sound=100
 	global.cofing_SE_sound=80
 	global.gamemode_soundtest=false

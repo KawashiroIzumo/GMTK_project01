@@ -5,5 +5,9 @@ if(ds_exists(global.head_list,ds_type_list))
 	var lssize=ds_list_size(global.head_list)
 	if(lssize<global.head_list_size_max)
 		ds_list_add(global.head_list,hid)
+	else
+	{
+		global.chara_hp+=0.1
+	}
 }
 instance_destroy()

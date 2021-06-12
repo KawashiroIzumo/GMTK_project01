@@ -13,6 +13,7 @@ if(team==0)
 			if(!other.udi)
 			{
 				flag_destroy=1
+				//break;
 			}
 		}
 	}
@@ -26,6 +27,13 @@ else if(team==1)
 			//hp+=other.atk
 			if(!udi)
 			{
+				if(global.chara_hp>=1)global.chara_hp-=1
+				else
+				{
+					global.chara_hp=3
+					show_message("game over")
+					room_restart()
+				}
 				sound_SE_play(other.hitsound,0)
 				sound_SE_play(SE00_water06,0)
 				udi=1
@@ -36,9 +44,9 @@ else if(team==1)
 				x=-256
 				y=360
 				direction=0
-				speed=8
-				alarm[3]=30
-				alarm[4]=60
+				speed=4
+				alarm[3]=90
+				alarm[4]=180
 				with(enemy)
 				{
 					if(global.boss!=id)instance_destroy()

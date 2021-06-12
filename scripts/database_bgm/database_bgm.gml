@@ -28,7 +28,7 @@ function database_bgm() {
 		global.bgm_flocate[i,j]=@"FmodBGM\_8bit_act04_stage01_loop.ogg"
 		//global.bgm_fload[i,j]=FMODGMS_Snd_LoadSound(working_directory + global.bgm_flocate[i,j])
 		global.bgm_assect[i,j]=_8bit_act04_stage01_loop
-	global.bgm_blend_time[i]=100//单位：步
+	global.bgm_blend_time[i]=300//单位：步
 	global.bgm_loop_begin[i]=15136/5//单位：毫秒
 	global.bgm_loop_end[i]=(161702-15136)/5//单位：毫秒
 	//********+*****+*******+*****+**+*+***+*****+*******

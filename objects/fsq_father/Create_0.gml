@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 team=0
-alarm[0]=1
 hid=-1
 spd=6
+target_direction=-1
 function pfsqRESET()
 {
 	speed=spd
