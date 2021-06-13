@@ -1,12 +1,12 @@
 ///@descr 动作检测
 var pflag=0;
 
-if(!instance_exists(memory_variable[7]))
+if(!instance_exists(fsq20sc00_head_rail))
 {
-	memory_variable[7]=instance_create_layer(x,y,"at_filed_Fx",fsq20sc00_head_rail)
-	memory_variable[7].fat=id
+	var a=instance_create_layer(x,y,"at_filed_Fx",fsq20sc00_head_rail)
+	a.fat=id
 }
-else with(memory_variable[7])
+else with(fsq20sc00_head_rail)
 {
 	onfire=0
 }
@@ -14,7 +14,7 @@ pflag=choose(0,1,2,3)
 
 if(pflag==0||pflag==1)//开火闲逛
 {
-	with(memory_variable[7])
+	with(fsq20sc00_head_rail)
 	{
 		onfire=1
 	}

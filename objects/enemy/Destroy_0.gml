@@ -32,5 +32,7 @@ if(global.boss==id)
 		cold=1
 		udi=1
 	}
-	
+	a=instance_create_layer(0,0,"system_layer",game_end_gui)
+	a.lssprite=gui_ending_GE
+	a.burst_sound=seGMTK03_onepoint04
 }

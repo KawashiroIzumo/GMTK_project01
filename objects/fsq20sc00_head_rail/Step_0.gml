@@ -20,3 +20,8 @@ else
 }
 image_angle+=2
 if(image_angle>360)image_angle-=360
+
+with(fsq20sc00_head_rail)
+{
+	if(id!=other.id)instance_destroy()
+}

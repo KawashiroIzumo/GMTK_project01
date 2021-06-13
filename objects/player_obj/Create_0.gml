@@ -20,12 +20,20 @@ head_collision=instance_create_layer(x,y,"player",Head_Collision);
 
 function player_hurt()
 {
-	if(global.chara_hp>0)global.chara_hp-=1
+	if(global.chara_hp>0)
+	{
+		global.chara_hp-=1
+		direction=0
+		speed=4
+		alarm[3]=90
+		alarm[4]=180
+	}
 	else
 	{
+		x=-512
 		global.chara_hp=3
-		show_message("game over")
-		room_restart()
+		ds_list_clear(global.head_list)
+		a=instance_create_layer(0,0,"system_layer",game_end_gui)
 	}	
 	sound_SE_play(SE00_water06,0)
 	udi=1
@@ -36,10 +44,6 @@ function player_hurt()
 	ds_list_clear(global.head_list)
 	x=-256
 	y=360
-	direction=0
-	speed=4
-	alarm[3]=90
-	alarm[4]=180
 	with(enemy)
 	{
 		if(global.boss!=id)instance_destroy()
