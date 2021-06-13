@@ -37,7 +37,7 @@ if(pflag==3)//河童部队
 if(pflag==5)//G胖商团
 {
 	timeline_position=639
-	memory_variable[1]=3
+	memory_variable[1]=2
 	memory_variable[2]=640-irandom(128)
 	memory_variable[3]=128
 }

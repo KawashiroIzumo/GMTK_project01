@@ -82,12 +82,13 @@ function database_head()
 	#region EVA-01
 	global.head_name[i]="初号飞机"
 	global.head_spr[i]=head20_shinji
-	global.head_danmaku_player[i]=pfsq18_kirby
-	global.head_danmaku_enemy[i]=fsq18_starsaber
+	global.head_danmaku_player[i]=noone
+	global.head_danmaku_enemy[i]=noone
 	global.head_ai[i]=SC00_eva01
-	global.head_hp[i]=1000000
+	global.head_hp[i]=10000
 	global.head_spd[i]=6
 	global.head_spd_player[i]=12
+	global.head_lock[i]=1
 	#endregion
 	//_________---------------__________________-------------
 	global.head_num=i+1

@@ -1,0 +1,1 @@
+lssprite=tutorial_01

@@ -4,6 +4,6 @@
 // Inherit the parent event
 event_inherited();
 alarm[0]=1;
-ProjectileCount=5;
+ProjectileCount=4;
 projectile=0;
-ProjectileInterval=1;
+ProjectileInterval=2;

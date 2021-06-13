@@ -13,7 +13,7 @@ for(i=0;i<20;i++)
 	funnel_sprite[i]=noone
 	funnel_fsq[i]=noone
 	funnel_fsq_cold[i]=0
-	funnel_fsq_cold_max[i]=20
+	funnel_fsq_cold_max[i]=5
 	funnel_dis[i]=-1
 	funnel_dre[i]=0
 }
